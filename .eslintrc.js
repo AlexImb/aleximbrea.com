@@ -1,27 +1,23 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
-    node: true
+    node: true,
   },
+  extends: ['plugin:vue/vue3-recommended', 'eslint:recommended', '@vue/prettier'],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
-  extends: [
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
-  ],
-  plugins: [
-    'prettier'
-  ],
-  // add your custom rules here
   rules: {
-    "no-console": "off",
-    "vue/no-v-html": "off",
-    "vue/html-self-closing": "off",
-    "nuxt/no-timing-in-fetch-data": "off"
-  }
-}
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 100,
+        singleQuote: true,
+        trailingComma: 'all',
+        htmlWhitespaceSensitivity: 'ignore',
+      },
+    ],
+  },
+};
