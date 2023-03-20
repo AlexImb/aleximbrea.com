@@ -10,11 +10,12 @@ import {
   faTwitter,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
+import { faCalendarDay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 const app = createApp(App);
 
-library.add(faLinkedin, faGithub, faProductHunt, faTwitter, faFacebook);
+library.add(faLinkedin, faGithub, faProductHunt, faTwitter, faFacebook, faCalendarDay);
 app.component('Icon', FontAwesomeIcon);
 
 app.use(VueGtag, {

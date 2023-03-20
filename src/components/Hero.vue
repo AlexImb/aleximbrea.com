@@ -10,7 +10,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        <Icon :icon="['fab', item.icon]" class="mx-4" />
+        <Icon :icon="[item.iconFamily, item.icon]" class="mx-4" />
       </a>
     </div>
   </div>
@@ -21,11 +21,12 @@ export default {
   data() {
     return {
       socialItems: [
-        { link: 'https://www.linkedin.com/in/alex-imbrea', icon: 'linkedin' },
-        { link: 'https://github.com/AlexImb', icon: 'github' },
-        { link: 'https://www.producthunt.com/@aleximb', icon: 'product-hunt' },
-        { link: 'https://twitter.com/aleximb', icon: 'twitter' },
-        { link: 'https://www.facebook.com/username.no13', icon: 'facebook' },
+        { link: 'https://www.linkedin.com/in/alex-imbrea', iconFamily: 'fab', icon: 'linkedin' },
+        { link: 'https://github.com/AlexImb', iconFamily: 'fab', icon: 'github' },
+        { link: 'https://www.producthunt.com/@aleximb', iconFamily: 'fab', icon: 'product-hunt' },
+        { link: 'https://twitter.com/aleximb', iconFamily: 'fab', icon: 'twitter' },
+        { link: 'https://www.facebook.com/username.no13', iconFamily: 'fab', icon: 'facebook' },
+        { link: 'https://calendly.com/aleximbrea', iconFamily: 'fa', icon: 'calendar-day' },
       ],
     };
   },
