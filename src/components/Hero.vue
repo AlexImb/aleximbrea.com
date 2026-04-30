@@ -27,6 +27,7 @@ export default {
         { link: 'https://twitter.com/aleximb', iconFamily: 'fab', icon: 'twitter' },
         { link: 'https://www.facebook.com/username.no13', iconFamily: 'fab', icon: 'facebook' },
         { link: 'https://calendly.com/aleximbrea', iconFamily: 'fa', icon: 'calendar-day' },
+        { link: '/pgp.asc', iconFamily: 'fa', icon: 'fingerprint' },
       ],
     };
   },
